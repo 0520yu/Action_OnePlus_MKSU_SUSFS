@@ -195,7 +195,6 @@ jobs:
         run: |
           cd kernel_workspace
           git clone https://gitlab.com/simonpunk/susfs4ksu.git -b gki-${{ github.event.inputs.ANDROID_VERSION }}-${{ github.event.inputs.KERNEL_VERSION }}
-          cd susfs4ksu && git checkout 84c8fd6929c0f9a0cdd78f707599b6d76f415d37 && cd ..
           git clone https://github.com/ShirkNeko/SukiSU_patch.git
           cd kernel_platform
           echo "正在给内核打susfs补丁"
